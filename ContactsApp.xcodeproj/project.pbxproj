@@ -64,8 +64,7 @@
 			children = (
 				8CE128792BC90DC30064BCFE /* AppDelegate.swift */,
 				8CE1287B2BC90DC30064BCFE /* SceneDelegate.swift */,
-				8CE1287D2BC90DC30064BCFE /* MainVc.swift */,
-				8CE1288D2BC90F850064BCFE /* DetailsPage.swift */,
+				8CE1289D2BC9D6CA0064BCFE /* Controllers */,
 				8CE1288F2BC91A8D0064BCFE /* CustomView */,
 				8CE128842BC90DC50064BCFE /* LaunchScreen.storyboard */,
 				8CE128992BC97CFE0064BCFE /* Assets.xcassets */,
@@ -79,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				8CE128902BC91AA10064BCFE /* ContactCell */,
-				8CE128912BC91ABF0064BCFE /* DetailsCell */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -93,11 +91,13 @@
 			path = ContactCell;
 			sourceTree = "<group>";
 		};
-		8CE128912BC91ABF0064BCFE /* DetailsCell */ = {
+		8CE1289D2BC9D6CA0064BCFE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8CE1287D2BC90DC30064BCFE /* MainVc.swift */,
+				8CE1288D2BC90F850064BCFE /* DetailsPage.swift */,
 			);
-			path = DetailsCell;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
