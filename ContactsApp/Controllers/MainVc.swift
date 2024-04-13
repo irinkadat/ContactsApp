@@ -105,7 +105,7 @@ class MainVc: UIViewController, UITableViewDataSource {
         contactsTableView.tableHeaderView = headerView
         
         NSLayoutConstraint.activate([
-            contactsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            contactsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             contactsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             contactsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             contactsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16)
