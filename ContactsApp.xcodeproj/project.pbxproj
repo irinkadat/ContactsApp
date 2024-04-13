@@ -15,7 +15,6 @@
 		8CE1288E2BC90F850064BCFE /* DetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1288D2BC90F850064BCFE /* DetailsPage.swift */; };
 		8CE128932BC91AFB0064BCFE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE128922BC91AFB0064BCFE /* Contact.swift */; };
 		8CE128952BC922950064BCFE /* Developers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE128942BC922950064BCFE /* Developers.swift */; };
-		8CE1289C2BC9C6CC0064BCFE /* ContactsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1289B2BC9C6CC0064BCFE /* ContactsHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		8CE1288D2BC90F850064BCFE /* DetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPage.swift; sourceTree = "<group>"; };
 		8CE128922BC91AFB0064BCFE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		8CE128942BC922950064BCFE /* Developers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developers.swift; sourceTree = "<group>"; };
-		8CE1289B2BC9C6CC0064BCFE /* ContactsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C9A830A2BCB3CFF00AEF9E5 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8CE128942BC922950064BCFE /* Developers.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		8CE1286D2BC90DC30064BCFE = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +72,7 @@
 				8CE1287B2BC90DC30064BCFE /* SceneDelegate.swift */,
 				8CE1289D2BC9D6CA0064BCFE /* Controllers */,
 				8CE1288F2BC91A8D0064BCFE /* CustomView */,
-				8CE128942BC922950064BCFE /* Developers.swift */,
+				8C9A830A2BCB3CFF00AEF9E5 /* model */,
 				8C9A83082BCB399900AEF9E5 /* Assets.xcassets */,
 				8CE128842BC90DC50064BCFE /* LaunchScreen.storyboard */,
 				8CE128872BC90DC50064BCFE /* Info.plist */,
@@ -86,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				8CE128922BC91AFB0064BCFE /* Contact.swift */,
-				8CE1289B2BC9C6CC0064BCFE /* ContactsHeader.swift */,
 			);
 			path = ContactCell;
 			sourceTree = "<group>";
@@ -173,7 +178,6 @@
 				8CE128952BC922950064BCFE /* Developers.swift in Sources */,
 				8CE1287E2BC90DC30064BCFE /* MainVc.swift in Sources */,
 				8CE1287A2BC90DC30064BCFE /* AppDelegate.swift in Sources */,
-				8CE1289C2BC9C6CC0064BCFE /* ContactsHeader.swift in Sources */,
 				8CE128932BC91AFB0064BCFE /* Contact.swift in Sources */,
 				8CE1287C2BC90DC30064BCFE /* SceneDelegate.swift in Sources */,
 				8CE1288E2BC90F850064BCFE /* DetailsPage.swift in Sources */,
