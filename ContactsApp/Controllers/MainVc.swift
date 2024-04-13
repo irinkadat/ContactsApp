@@ -88,7 +88,7 @@ class MainVc: UIViewController, UITableViewDataSource {
         let developers = Developer.allDevelopers.sorted { $0.name < $1.name }
         
         for developer in developers {
-            let developerKey = String(developer.name.prefix(1).capitalized)
+            let developerKey = String(developer.name.prefix(1))
             if var developerValues = developersDictionary[developerKey] {
                 developerValues.append(developer)
                 developersDictionary[developerKey] = developerValues

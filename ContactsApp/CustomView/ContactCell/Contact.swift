@@ -52,7 +52,11 @@ class Contact: UITableViewCell {
     }
     
     func configure(with developer: Developer) {
-        nameLabel.text = developer.name
+        let fullName = developer.name
+        let nameComponents = fullName.components(separatedBy: " ")
+        let capitalizedComponents = nameComponents.map { $0.capitalized }
+        let finalName = capitalizedComponents.joined(separator: " ")
+        nameLabel.text = finalName
     }
 }
 
