@@ -7,7 +7,7 @@
 import UIKit
 
 class MainVc: UIViewController, UITableViewDataSource {
-    
+
     var developersDictionary = [String: [Developer]]()
     var developersSectionTitles = [String]()
     let titleContainer = UIView()
@@ -47,33 +47,13 @@ class MainVc: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "iOS Squad"
         navigationController?.navigationBar.prefersLargeTitles = true
         self.view.backgroundColor = .white
         
         prepareData()
-        configureNavigationBar()
         addContactsTableView()
     }
-    private func configureNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true     
-        navigationController?.navigationBar.backgroundColor = .white
-        let titleLabel = UILabel()
-        titleLabel.text = "iOS Squad"
-        titleLabel.font = UIFont.systemFont(ofSize: 34, weight: .bold)
-        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 64))
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-       
-        containerView.addSubview(titleLabel)
-        
-        navigationItem.titleView = containerView
-        NSLayoutConstraint.activate([
-            titleLabel.centerXAnchor.constraint(equalTo: containerView.centerXAnchor, constant: -76),
-            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 40),
-            containerView.widthAnchor.constraint(equalToConstant: 200),
-            containerView.heightAnchor.constraint(equalToConstant: 44)
-        ])
-    }
-    
     private func setupInfoStackView() -> UIView {
         let headerView = UIView()
         headerView.backgroundColor = .white
@@ -108,7 +88,7 @@ class MainVc: UIViewController, UITableViewDataSource {
         let developers = Developer.allDevelopers.sorted { $0.name < $1.name }
         
         for developer in developers {
-            let developerKey = String(developer.name.prefix(1))
+            let developerKey = String(developer.name.prefix(1).capitalized)
             if var developerValues = developersDictionary[developerKey] {
                 developerValues.append(developer)
                 developersDictionary[developerKey] = developerValues
@@ -126,7 +106,7 @@ class MainVc: UIViewController, UITableViewDataSource {
         
         NSLayoutConstraint.activate([
             contactsTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            contactsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            contactsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             contactsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             contactsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -16)
         ])
